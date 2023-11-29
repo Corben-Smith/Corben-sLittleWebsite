@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='/css/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <title><%= locals.name%>'s Driver Page</title>
+</head>
+<body class= "bg-black font-Sarabun font-semibold">
+    <div class="mx-0 mt-0 mb-5 left-0 top-0 bg-nascarBlue h-20">
+        <ul class="">
+            <li class="float-right block h-16 mx-10 bg-nascarYellow w-60 text-center align-text-bottom">Item</li>
+            <li class="float-right block h-16 mx-10 bg-nascarYellow w-60 text-center align-text-bottom">Item</li>
+            <li class="float-right block h-16 mx-10 bg-nascarYellow w-60 text-center align-text-bottom">Item</li>
+            <li class="float-right block h-16 mx-10 bg-nascarYellow w-60 text-center align-text-bottom">Item</li>
+
+        </ul>
+    </div>
+    <div class="flex mb-4 h-1/2">
+        <div class="flex-1 w-auto mx-48 bg-white border-solid border-nascarBlue rounded-3xl border-8 bg-[url('/images/checker.jpg')] bg-cover overflow-hidden">
+            <img class="object-contain mx-2 h-[40dvh] w-full" src="/images/<%= locals.carNumber%>.jpg">
+        </div>
+        <div class="flex-initial w-1/2 bg-white px-3 py-2 m-2 rounded-xl">
+            <h1 class=" p-2 my-2 rounded-lg text-nascarBlue font-bold text-center border-solid border-nascarRed border-2"><%= locals.name %></h1>
+            <ul class = "list-none mx-2">
+                <li class=" border-b-2 text-black p-2 my-2 rounded-lg">Car Number: <%= locals.carNumber %></li>
+                <li class=" border-b-2 text-black p-2 my-2 rounded-lg">Age: <%= locals.age %></li>
+                <li class=" border-b-2 text-black p-2 my-2 rounded-lg">Team: <%= locals.team %></li>       
+                <li class=" border-b-2 text-black p-2 my-2 rounded-lg">Hometown: <%=locals.home %></li>   
+                <li class=" border-b-2 text-black p-2 my-2 rounded-lg">Championship Wins: <%= locals.championship %></li> 
+                <li class=" border-b-2 text-black p-2 my-2 rounded-lg">Wins: <%=locals.wins %></li>            
+            </ul>
+        </div>
+    </div>
+    <div class="">
+        <p class="mx-4 px-6 py-4 bg-white first-line:font-bold rounded-lg">
+            <%= locals.desc %> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi temporibus aspernatur, hic rerum animi velit quia totam alias quaerat perferendis, est tenetur obcaecati. Libero inventore voluptates architecto quas pariatur.<%= locals.desc %> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi temporibus aspernatur, hic rerum animi velit quia totam alias quaerat perferendis, est tenetur obcaecati. Libero inventore voluptates architecto quas pariatur.<%= locals.desc %> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi temporibus aspernatur, hic rerum animi velit quia totam alias quaerat perferendis, est tenetur obcaecati. Libero inventore voluptates architecto quas pariatur.<%= locals.desc %> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi temporibus aspernatur, hic rerum animi velit quia totam alias quaerat perferendis, est tenetur obcaecati. Libero inventore voluptates architecto quas pariatur.
+        </p>
+    </div>
+</body>
+</html>
